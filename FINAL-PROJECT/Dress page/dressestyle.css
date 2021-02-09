@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d2d0ca;
+
+}
+@keyframes in {from{
+  color:#fc5d08;
+}to{
+  color: rand;
+  transform: scale(1.2);
+}
+
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li{
+  display:inline-block;
+  margin-right: 20px;
+
+}
+nav ul li:hover{
+  transform: scale(1.2);
+}
+a{
+  text-decoration: none;
+  color: #555;
+}
+p{
+  color: #555;
+}
+.container{
+
+  max-width: 1800px;
+  margin:auto;
+  padding-left: 25;
+  padding-right: 25;
+}
+.row{animation-name:in;
+animation-duration: 2.5s;
+
+  display: flex;
+  align-items:stretch;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+ .col1{
+
+   flex-basis: 50%;
+   min-width: 400px;
+ }
+.col1 img{
+  width: 120%;
+  padding: 20px 0 0;
+
+}
+.col1 h1{
+  animation-name: in;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+  font-size: 45px;
+ margin-top: -90px;
+
+}
+
+.col1 p{
+  font-size: 20px;
+  margin: 10px 10px;
+  line-height: 30px;
+
+}
+.header{
+  background-image:radial-gradient(#fff, #ffd6d6);
+}
+.header .row{
+  margin-top: 10px;
+}
+svg{
+  width: 20px;
+  height: 20px;
+}
+svg:hover{
+  transform: scale(1.3);
+}
+.categories{
+  margin: 70px 0;
+
+}
+.col2{
+  flex-basis: 50%;
+
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 20px   rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-top: 30px;
+
+}
+.col2 img{width: 100%;
+}
+.col2:hover{
+
+  transform: translateY(-20px);
+  opacity: 0.8;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+div.gallery {
+  margin: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 230px;
+  color: black;
+   box-shadow: 10px 10px 20px   rgba(0, 0, 0, 0.5);
+   background-color: #ac63eb;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  transform: scale(1.2);
+  transition: transform .5s;
+  background-color: #d38eec;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.checked:hover{
+  color: #e81a32;
+  transform:scale(1.5);
+}
